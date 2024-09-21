@@ -1,0 +1,282 @@
+.container1 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 0px;
+  position: relative;
+  }
+
+  @media (max-width: 991px){
+    .container1 {
+      margin: 0 auto;
+      width: 95%;
+      max-width: 1000px;
+      
+      position: relative;
+      }
+  }
+
+#slider-lavanderia{
+  background-color: none;
+  z-index: -1;
+}
+
+section{
+  background: none;
+}
+
+/* Slider */
+.slider {
+  height: 50vh;
+
+}
+
+.wallpaper {
+  -webkit-animation: slider 1s ease infinite;
+  animation: slider 20s ease infinite;
+  background: linear-gradient(to bottom, #0562e583 , #ffffff51), url('https://images.unsplash.com/photo-1465674982114-2368001a8448?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') #fff center / cover no-repeat scroll;
+  
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  /*border-radius: 0 0 90% 90%/0 0 30% 30%;*/
+}
+
+.wallpaper:nth-child(2) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+          background: linear-gradient(to bottom, #0562e583 , #ffffff51), url('https://images.unsplash.com/photo-1444594975920-e69885b357d5?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') #fff center / cover no-repeat scroll;
+}
+
+.wallpaper:nth-child(3) {
+  background: linear-gradient(to bottom,  #0562e583 , #ffffff51), url('https://images.unsplash.com/photo-1640211172112-fb6259c74953?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') #fff center / cover no-repeat scroll;
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
+}
+
+@media (max-width: 991px){
+  .slider {
+    height: 50vh;
+    
+  }
+  
+  .wallpaper {
+
+    border-radius: 0 0 250% 250%/0 0 91% 91%;
+  }
+
+}
+
+.ctn-content-slider h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 0px;
+  margin-top: 50px;
+}
+
+  
+@media (max-width: 991px){
+  .ctn-content-slider h1 {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.7rem;
+      line-height: 0px;
+      margin-top: 50%;
+    }
+  }
+
+/*Los movi al css general al recursos style*/
+
+/*
+.btn-slider {
+  background-color: #ec5483;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  text-align: center;
+  transition: ease-in;
+}
+
+.btn-slider:hover {
+  transition: ease-in .7s;
+  background-color: #c03c66;
+}
+
+*/
+
+.ctn-book-now {
+  background-color: #000000;
+  font: bold 18px sans-serif;
+  padding: 0.5rem 1rem;
+  right: calc(0% - 5px);
+  transform: rotateZ(270deg) translateY(100%);
+  z-index: 1;
+}
+
+
+@-webkit-keyframes slider {	
+    20% {
+        opacity: 1;
+        visibility: visible;
+  }
+}
+
+@keyframes slider {	
+    20% {
+        opacity: 1;
+        visibility: visible;
+  }
+}
+
+  .wrapper {max-width:90em;
+    margin:0 auto;
+     display: -webkit-box;
+display: -webkit-flex;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+.items {
+display: -webkit-box;
+display: -webkit-flex;
+display: flex;
+flex-flow: wrap;
+justify-content: center;
+padding: 1rem 50px 40px 50px;
+width: 100%;
+transition: all 0.2s;
+position: relative;
+
+}
+
+
+
+.item-image {
+display: block;
+width: 100%;
+height: 270px;
+object-fit: cover;
+}
+
+.item {
+background: var(--color-principal);
+box-shadow: 0 0 0 1px rgba(0,0,0,0.01),0 1px 2px rgba(0,0,0,0.07),0 5px 15px rgba(0,0,0,0.03);
+margin-right: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+margin:0 1em 2em 1em;
+}
+
+.item-content {
+display: -webkit-box;
+display: -webkit-flex;
+display: flex;
+-webkit-box-flex: 1;
+flex: 1 0 auto;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+flex-direction: column;
+margin-top: 0;
+padding: 1.2rem;
+width: 340px;
+}
+
+h4.item-title {
+font-size: 1.25rem;
+font-weight: 600;
+color: var(--blanco);
+margin: 0.5rem 0 0.5rem;
+}
+
+.item-description {
+font-size: 0.9375rem;
+line-height: 1.5;
+color: var(--blanco);
+margin: 0 0 1rem;
+}
+
+h5.item-category {
+display: inline-block;
+color: var(--color-secundario);
+font-size: 1rem;
+font-weight: 700;
+letter-spacing: 1px;
+/*text-transform: uppercase;*/
+text-decoration: none;
+margin: 0.5rem 0 0rem;
+}
+
+
+
+/*****  TWERMINAN CARDS  ******/
+
+
+/******* CALENDLY *******/
+
+.calendly-inline-widget{
+margin: 1rem;
+border-radius: 10px;
+}
+/*****  TERMINAN CALENDLY ******/
+
+
+/*MAPA*/
+.map-responsive{
+
+    overflow:hidden;
+  
+    padding-bottom:20%;
+  
+    position:relative;
+  
+    height:0;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 90%;
+    border: 3px solid  #d2ab6785;
+    margin-bottom: 90PX;
+  
+  }
+  
+  .map-responsive iframe{
+  
+    left:0;
+  
+    top:0;
+  
+    height:100%;
+  
+    width:100%;
+  
+    position:absolute;
+  
+  }
+  
+  @media (max-width: 700px) {
+    .map-responsive{
+  
+      overflow:hidden;
+    
+      padding-bottom:70%;
+    
+      position:relative;
+    
+      height:0;
+      max-width: 1100px;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-bottom: 90PX;
+    
+    }
+  }
+  
+  /* Termina el mapa */
+
+
+  .btn{
+    color: #fff;
+  }
