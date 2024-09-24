@@ -1,9 +1,8 @@
 {
   "name": "Mexican Coffee",
   "short_name": "Mexican Coffee",
-  "description": "Bienvenidos a Mexican Coffee",
-  "background_color": "#1F2933", 
-  "theme_color": "#1F2933",
+  "background_color": "#ffffff", 
+  "theme_color": "#ffffff",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./?utm_source=web_app_manifest",
@@ -59,6 +58,20 @@
       "src": "./img/favicon.png",
       "sizes": "16x16",
       "type": "image/png"
+    }
+  ],
+  "description": "Disfruta de la nueva app de CIBJ Group",
+  "categories": [
+    "photo",
+    "productivity",
+    "utilities"
+  ],
+  "screenshots": [
+    {
+      "src": "./img/screen.png",
+      "type": "image/png",
+      "sizes": "640x320",
+      "form_factor": "narrow"
     }
   ]
 }

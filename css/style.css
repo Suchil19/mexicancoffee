@@ -28,9 +28,9 @@ body{
   --text-color-light: hsl(355, 4%, 55%);
   --body-color: #fff;
   --container-color: #fff;
-  --color-principal: #1F2933;
+  --color-principal: #13477b;
   --color-secundario: #059ed8;
-  --color-de-fondo: #6f6f6f;
+  --color-de-fondo: #a6a6a6;
   --color-blanco: #fff;
   --background-negro: #1d1d1d ;
   --color-blanco-letras: #fff;
@@ -167,7 +167,7 @@ header{
 }
 
   .navbar.bg-dark {
-    background-color: #1F2933 !important;
+    background-color: var(--color-principal) !important;
   }
 
   /* Tamaño del logo */
@@ -177,11 +177,11 @@ header{
   }
   
   .navbar-nav {
-   background-color: #1F2933 !important;
+   background-color: var(--color-principal) !important;
   }
   
   .header .offcanvas-body, .header .offcanvas-header {
-    background-color: #1F2933 !important;
+    background-color: var(--color-principal) !important;
   }
   .header .offcanvas-header, .header .offcanvas-body {
     padding: 1.5rem 2rem;
