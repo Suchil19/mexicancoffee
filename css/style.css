@@ -30,7 +30,7 @@ body{
   --container-color: #fff;
   --color-principal: #13477b;
   --color-secundario: #059ed8;
-  --color-de-fondo: #a6a6a6;
+  --color-de-fondo: #f3f3f3;
   --color-blanco: #fff;
   --background-negro: #1d1d1d ;
   --color-blanco-letras: #fff;
@@ -169,6 +169,9 @@ header{
 
   .navbar.bg-dark {
     background-color: var(--color-blanco) !important;
+    -webkit-box-shadow: 7px 7px 36px -17px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 7px 36px -17px rgba(0,0,0,0.75);
+box-shadow: 7px 7px 36px -17px rgba(0,0,0,0.75);
   }
 
   /* Tamaño del logo */
@@ -566,7 +569,7 @@ input {
   margin-bottom: var(--mb-2-5);
   text-align: center;
   margin-top: 2rem;
-  color: var(--color-blanco);
+  color: var(--color-letras-principal);
 }
 
 @media screen and (max-width: 760px) {
@@ -585,7 +588,7 @@ input {
   margin-bottom: var(--mb-2-5);
   text-align: center;
   margin-top: 7rem;
-  color: var(--color-blanco);
+  color: var(--color-letras-principal);
 }
 
 @media screen and (max-width: 991px) {
@@ -620,12 +623,12 @@ input {
 .giving__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-25);
-  color: var(--color-blanco);
+  color: var(--color-letras-principal);
 }
 
 .giving__description {
   font-size: var(--small-font-size);
-  color: var(--color-blanco);
+  color: var(--color-letras-principal);
 }
 
 .giving__img:hover {
