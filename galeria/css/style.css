@@ -326,12 +326,12 @@ width: 90%;
 }
 .section02 h3{
     font-size: 2rem;
-    color: var(--blanco);
+    color: var(--color-principal);
     font-weight: 900;
 }
 .section02 p{
     margin-top: 10%;
-    color: var(--blanco);
+    color: var(--color-principal);
 }
 .section02 img
 {
@@ -687,15 +687,15 @@ display:block;
 .page-head h1 {
   font-size: 2rem;
   margin: 0 0 20px;
-  color: var(--color-secundario);
+  color: var(--color-principal);
   position: relative;
   display: inline-block;
 }
 
 .page-head h1 .version {
   bottom: 0;
-  color: var(--color-secundario);
-  font-size: 11px;
+  color: var(--color-principal);
+  font-size: 1rem;
   font-style: italic;
   position: absolute;
   width: 58px;

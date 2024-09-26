@@ -480,8 +480,9 @@ header{
 }
 .section02 h3{
   font-size: 3rem;
-  color: #fdfeff79;
+  color: var(--color-letras-principal);
   font-weight: 900;
+  text-align: center;
 }
 .section02 p{
   margin-top: 10%;
