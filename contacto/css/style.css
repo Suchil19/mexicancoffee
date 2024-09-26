@@ -4,7 +4,7 @@ body{
 	font-size: 15px;
 	line-height: 1.7;
 	color: var(--blanco);
-	background-color: #242323 !important;
+  background-color: var(--color-de-fondo) !important;
   	/*background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');*/
   	background-position: center;
   	background-repeat: repeat;
@@ -28,10 +28,14 @@ body{
   --text-color-light: hsl(355, 4%, 55%);
   --body-color: #fff;
   --container-color: #fff;
-  --color-principal: #1F2933;
+  --color-principal: #13477b;
   --color-secundario: #059ed8;
-  --blanco: #fff;
-  --backgorund: #ececec;
+  --color-de-fondo: #a6a6a6;
+  --color-blanco: #fff;
+  --background-negro: #1d1d1d ;
+  --color-blanco-letras: #fff;
+  --color-letras-principal: #13477b;
+  --color-negro-letras: #000;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -85,7 +89,7 @@ body{
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #f2f2f2 url("../../img/preloader/preload.svg") no-repeat center center;
+  background: #f2f2f2 url("../img/preloader/preload.svg") no-repeat center center;
 }
 
 /* MENSAJES FIREBASE */
@@ -127,20 +131,13 @@ body{
  margin-bottom: -100px !important;
 }
 
+
 .container{
   max-width: 1200px;
   width: 95%;
   margin: 0 auto;
   padding: 0;
 }
-
-.container02{
-  max-width: 1200px;
-  width: 95%;
-  margin: 0 auto;
-  padding: 0;
-}
-
 
 .container__slider{
   max-width: 1200px;
@@ -171,26 +168,27 @@ header{
 }
 
   .navbar.bg-dark {
-    background-color: var(--color-principal)!important;
+    background-color: var(--color-blanco) !important;
   }
+
+  /* Tamaño del logo */
 
   .navbar-brand img {
     width: 90px;
   }
   
   .navbar-nav {
-    background-color: #1F2933 !important;
-    opacity: 1 !important;
+   background-color: var(--color-blanco) !important;
   }
   
   .header .offcanvas-body, .header .offcanvas-header {
-    background-color: #1F2933;
+    background-color: var(--color-principal) !important;
   }
   .header .offcanvas-header, .header .offcanvas-body {
     padding: 1.5rem 2rem;
   }
   .header .nav-link {
-    color: #f5f7fa;
+    color: var(--color-letras-principal);
     font-weight: 400;
     transition: 0.3s all;
     font-size: 1.2rem;
@@ -242,12 +240,24 @@ header{
     
     }
 
+    .navbar-nav {
+      background-color: var(--color-principal) !important ;
+     }
+
+     .header .nav-link {
+      color: var(--color-blanco);
+      font-weight: 400;
+      transition: 0.3s all;
+      font-size: 1.2rem;
+      padding: 0rem 2rem;
+    }  
+
      .navbar-brand img {
     width: 50px;
   }
 
     .header li {
-      /*padding: 1.2rem 0;*/
+      /*padding: 1rem 0;*/
       font-size: 1.5rem;
       text-align: center;
     }
@@ -564,9 +574,10 @@ header{
 
 
 
+
   /*** FOOTER ***/
 
- footer ul {
+  footer ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -581,15 +592,16 @@ section {
 }
 
 footer p{
-  color: #fff;
+  color: var(--color-letras-principal);
 }
 
 .main-footer{
 position:relative;
 padding: 2rem 0px 0px;
-background-color: var(--color-principal);
+background-color: var(--color-blanco);
 background-repeat:repeat-x;
 background-position:right bottom;
+color: var(--color-principal);
 }
 
 .main-footer .footer-widget{
@@ -606,7 +618,7 @@ padding-bottom:60px;
 position:relative;
 font-size:22px;
 font-weight:600;
-color:#fff;
+color:var(--color-letras-principal);
 line-height:1.2em;
 margin-bottom:30px;
 margin-top:25px;
@@ -628,7 +640,7 @@ position:relative;
 
 footer .main-footer .about-widget .text p{
 position:relative;
-color:#8a8d91;
+color:#000 !important;
 font-size:15px;
 line-height:1.7em;
 margin-bottom:20px;
@@ -651,7 +663,7 @@ margin-bottom:17px;
 
  .main-footer .footer-list li a{
 position:relative;
-color:var(--blanco);
+color:var(--color-letras-principal);
 font-size: 1rem;
 padding-left: 15px;
 -webkit-transition:all 300ms ease;
@@ -720,7 +732,7 @@ position:relative;
 
 .main-footer .info-list li{
 position:relative;
-color:var(--blanco);
+color:var(--color-letras-principal);
 font-size:15px;
 line-height:1.8em;
 margin-bottom:12px;
@@ -744,7 +756,7 @@ margin-right:0px;
 
 .main-footer .info-widget .social-links li a{
 position:relative;
-color: #ffffff;
+color:var(--color-letras-principal);
 width:50px;
 height:50px;
 line-height:50px;
@@ -781,7 +793,7 @@ background-color:#1ab7ea;
 .main-footer .footer-bottom{
 position:relative;
 padding:20px 0px;
-border-top:1px solid #e5e5e5;
+border-top:1px solid var(--color-letras-principal);
 }
 
 .main-footer .footer-bottom .footer-nav{
@@ -795,7 +807,7 @@ padding-right:10px;
 margin-right:10px;
 line-height:1.1em;
 display:inline-block;
-border-right: 1px solid var(--blanco);
+border-right: 3px solid var(--color-letras-principal);
 }
 
 .main-footer .footer-bottom .footer-nav li:last-child{
@@ -806,7 +818,7 @@ border-right:none;
 
 .main-footer .footer-bottom .footer-nav li a{
 position:relative;
-color: var(--blanco);
+color: var(--color-letras-principal);
 font-size:15px;
 -webkit-transition:all 300ms ease;
 -moz-transition:all 300ms ease;
@@ -820,11 +832,11 @@ color:var(--color-secundario);
 text-decoration:underline;
 }
 .copyright{
-  color: var(--blanco);
+  color: var(--color-letras-principal);
 }
 
 .footer-bottom a{
-  color: var(--blanco);
+  color: var(--color-letras-principal);
 }
 
 .footer-bottom a:hover{
@@ -845,7 +857,7 @@ text-decoration:underline;
   margin-bottom: 10px;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #00bbff;
+  background-color: var(--color-principal);
   color: #fff;
   border-radius: 4px;
   border: none;
