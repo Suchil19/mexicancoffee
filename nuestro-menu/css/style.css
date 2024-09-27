@@ -122,7 +122,7 @@
     width: 95%;
     margin: 0 auto;
     padding: 0;
-    margin-top: 0px;
+    margin-top: 3rem;
   }
 
   .container03{
@@ -311,12 +311,13 @@ width: 90%;
 }
 .section02 h3{
     font-size: 2rem;
-    color: var(--blanco);
+    color: var(--color-principal);
     font-weight: 900;
+    text-align: center;
 }
 .section02 p{
     margin-top: 10%;
-    color: var(--blanco);
+    color: var(--color-principal);
 }
 .section02 img
 {
