@@ -29,7 +29,7 @@ body{
   --body-color: #fff;
   --container-color: #fff;
   --color-principal: #13477b;
-  --color-secundario: #059ed8;
+  --color-secundario: #b9925e;
   --color-de-fondo: #f3f3f3;
   --color-blanco: #fff;
   --background-negro: #1d1d1d ;
@@ -669,7 +669,7 @@ input {
 .gift__card {
   display: grid;
   position: relative;
-  background-color: #1F2933 !important;
+  background-color: var(--color-principal);
   box-shadow: 0 2px 25px #02b4dc1d;
   padding: 1rem 1rem 1rem;
   border-radius: .75rem;
@@ -677,7 +677,7 @@ input {
 }
 
 .gift__img {
-  width: 120px;
+  width: 130px;
   justify-self: center;
   margin-bottom: var(--mb-0-25);
   transition: .3s;
@@ -704,6 +704,7 @@ input {
 .gift__price {
   font-size: var(--h3-font-size);
   transition: .2s ease-in;
+  text-align: center;
 }
 
 .gift__price:hover{
@@ -712,12 +713,14 @@ input {
 }
 
 .gift__title {
-  font-size: var(--smaller-font-size);
+  font-size: 1rem;
   font-weight: var(--font-medium);
+  text-align: center;
+  color: var(--color-secundario);
 }
 
 .gift__card:hover .gift__img {
-  transform: translateY(-.45rem);
+  transform: translateY(-.25rem);
 }
 
 /*=============== NEW ===============*/
