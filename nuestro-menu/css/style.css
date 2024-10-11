@@ -71,6 +71,16 @@
   background: #f2f2f2 url("../../img/preloader/preload.svg") no-repeat center center;
 }
 
+/*
+.wrapper02{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+*/
+
+
 /* MENSAJES FIREBASE */
 
 .list-group-item{
