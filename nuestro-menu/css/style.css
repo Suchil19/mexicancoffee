@@ -12,9 +12,14 @@
   --text-color-light: hsl(355, 4%, 55%);
   --body-color: #fff;
   --container-color: #fff;
-  --color-principal: #1F2933;
-  --color-secundario: #059ed8;
-  --blanco: #fff;
+  --color-principal: #13477b;
+  --color-secundario: #b9925e;
+  --color-de-fondo: #f3f3f3;
+  --color-blanco: #fff;
+  --background-negro: #1d1d1d ;
+  --color-blanco-letras: #fff;
+  --color-letras-principal: #13477b;
+  --color-negro-letras: #000;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -378,6 +383,14 @@ letter-spacing:0px;
 color:var(--color-secundario);
 font-weight: 800;
 }
+
+/* Agregue las images */
+.menu-restaurant img{
+  align-items: left !important;
+  width: 100%;
+}
+
+
 .menu-restaurant .menu-line
 {
 position: absolute;
@@ -390,7 +403,7 @@ margin-right: .6em;
 font-weight:600;
 position:absolute;
 right:0;
-top:0;
+top:25px;
 
 }
 .menu-restaurant .menu-subtitle
@@ -678,6 +691,15 @@ display:block;
   border-color: #eeeeee;
   color: #eeeeee;
   transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
+}
+
+/* Boton con imagen */
+
+.btn-primary01 {
+  background-color: var(--color-secundario) !important;
+  border-color: var(--background-negro);
+  color: #ffffff !important;
+  box-shadow: none !important;
 }
 
 .page-head h1 {
