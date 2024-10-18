@@ -549,10 +549,18 @@ input {
 
 .main {
   overflow: hidden;
+  padding: 7rem 0 0 0;
 }
 
 .main a{
   color: var(--color-blanco);
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    overflow: hidden;
+    padding: 4rem 0 0 0;
+  }
 }
 
 .main a:hover{
@@ -587,7 +595,7 @@ input {
   font-weight: 700;
   margin-bottom: var(--mb-2-5);
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 2rem;
   color: var(--color-letras-principal);
 }
 
@@ -654,7 +662,7 @@ input {
 }
 
 .celebrate__img {
-  width: 350px;
+  width: 250px !important;
   justify-self: center;
 }
 
@@ -1636,3 +1644,169 @@ button {
 .my-float{
 	margin-top:12px;
 }
+
+
+
+/*MAPA*/
+.map-responsive{
+
+	overflow:hidden;
+  
+	padding-bottom:20%;
+  
+	position:relative;
+  
+	height:0;
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 90%;
+	border: 3px solid  #d2ab67;
+  
+  }
+  
+  .map-responsive iframe{
+  
+	left:0;
+  
+	top:0;
+  
+	height:100%;
+  
+	width:100%;
+  
+	position:absolute;
+  
+  }
+  
+  @media (max-width: 700px) {
+	.map-responsive{
+  
+	  overflow:hidden;
+	
+	  padding-bottom:70%;
+	
+	  position:relative;
+	
+	  height:0;
+	  max-width: 1100px;
+	  margin: 0 auto;
+	  margin-top: 20px;
+	
+	}
+  }
+  
+  /* Termina el mapa */
+
+
+/* === BANER   el baner es min width ojo cuando lo edites ===*/
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.page a{
+  text-decoration: none;
+}
+
+.page h1{
+font-size: 1.5rem;
+font-weight: 800;
+color: var(--color-letras-principal);
+}
+
+.page h2{
+  font-size: 1rem;
+}
+
+  .component {
+    margin: 0 1rem;
+    background: #fff;
+    box-shadow: 0 0 0.25rem rgba(black, 0.3);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 30rem;
+    font-size: 1rem;
+    color: #747474;
+   }
+  .avatar {
+    background-color: darken(white, 10%);
+    background-image: url('../img/inicio/banner-temporada.png');
+    background-size: cover;
+    border-radius: 0%;
+    width: 15em;
+    height: 15em;
+    margin: 0 auto;
+    /*border: 0.125rem solid #ccc;*/
+  }
+  .user_info {
+    text-align: center;
+    margin: 0.5rem 0 1.25rem;
+  }
+
+    /*
+      h2:before {
+        content: 'Last Updated: ';
+      }
+      */
+    
+  .btn2 {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    background: var(--color-principal);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(grey, 0.5);
+    transition: all 0.2s;
+  }
+    .btn2:hover {
+      cursor: pointer;
+      background: var(--color-secundario);
+    }
+  
+
+@media (min-width: 768px) {
+  .page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+  }
+    .component {
+      display: flex;
+      align-items: center;
+      padding: 1rem ;
+      width: 1070px;
+      font-size: 10px;
+    }
+    .avatar, .user_info, .btn {
+      flex: 1;
+    }
+    .avatar {
+      max-width: 10em;
+      height: 10em;
+      margin: 0;
+      border-radius: 0;
+      border: 0;
+    }
+    .user_info {
+      text-align: left;
+      margin: 0 1rem 0 1rem;
+
+    }
+    .btn2 {
+      padding: 1rem;
+      font-size: 1rem;
+      max-width: 10rem;
+    }
+  }
+  
+/* === TERMINA BANNER ===*/
