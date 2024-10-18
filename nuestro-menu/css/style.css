@@ -1204,7 +1204,7 @@ color: var(--color-blanco);
 font-family: "Josefin Sans", Arial, sans-serif;
 }
 .services-wrap .btn{
-color: #fff;
+color: var(--color-blanco);
 padding: 10px;
 border: 1px solid white;
 font-family: "Josefin Sans", Arial, sans-serif;
