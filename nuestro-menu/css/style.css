@@ -1200,7 +1200,7 @@ text-transform: uppercase;
 font-size: 30px;
 font-weight: 400;
 position: relative;
-color: #fff;
+color: var(--color-blanco);
 font-family: "Josefin Sans", Arial, sans-serif;
 }
 .services-wrap .btn{
