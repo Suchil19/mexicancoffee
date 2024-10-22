@@ -1221,3 +1221,124 @@ margin-bottom: 0;
 .services-wrap .text .price span{
 color: #fac564;
 }
+
+
+
+/* General */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: var(--lighter-orange);
+  color: var(--white);
+}
+
+.main p {
+  margin: 0;
+}
+.main p:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.main ul {
+  list-style: none;
+}
+
+.main img {
+  width: 100%;
+}
+
+/* Layout */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem !important;
+}
+
+/* Typography */
+.card_title {
+  font-family: var(--color-letras-principal);
+  font-size: 1.2rem;
+  line-height: 24px;
+
+}
+
+.card_text p {
+  font-family: var(--body-font);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Utilities */
+.orange {
+  color: var(--color-principal);
+}
+
+.note-sm {
+  color: var(--grey);
+  font-family: var(--title-font);
+  font-size: 14px;
+}
+
+/* Components */
+.main .cards {
+  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  cursor: pointer;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+.main .card {
+  background-color: var(--color-blanco);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /*height: 500px;*/
+}
+
+.main .card_content {
+  padding: 26px 16px 16px;
+}
+.main .card_title {
+  margin-bottom: 5px;
+}
+.main .card_text {
+  margin: 16px 0;
+}
+.main .card_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-family: var(--body-font);
+  float: right;
+}
+.main .card_btn:hover {
+  text-decoration: underline;
+}
+
+/* Media queries */
+@media (min-width: 40rem) {
+  .main .cards_item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .main .cards_item {
+    width: 33.3333%;
+  }
+}
+
